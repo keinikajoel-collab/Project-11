@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Inventory | Kei Motors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Kei <span>Motors</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html" class="active">Inventory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">&#9776;</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Current Inventory</h1>
+      <div class="filter-buttons">
+        <button class="filter-btn" data-category="sedan">Sedans</button>
+        <button class="filter-btn" data-category="suv">SUVs</button>
+        <button class="filter-btn" data-category="truck">Trucks</button>
+      </div>
+    </section>
+
+    <section class="grid-3" id="vehicleGrid">
+      <span><article class="card vehicle-card" data-category="sedan">
+        <img src="images (3).jpg" alt="Executive sedan">
+        <h3>2023 Executive Sedan</h3>
+        <p class="price">$24,500</p>
+        <p>Automatic • 18,000 km • Petrol</p>
+        <a href="contact.html" class="btn btn-secondary">Inquire Now</a>
+      </article>
+
+      <article class="card vehicle-card" data-category="suv">
+        <img src="images.jpg" alt=" Urban suv">
+        <h3>2022 Urban SUV</h3>
+        <p class="price">$31,200</p>
+        <p>AWD • 29,000 km • Hybrid</p>
+        <a href="contact.html" class="btn btn-secondary">Inquire Now</a>
+      </article>
+
+      <article class="card vehicle-card" data-category="truck">
+        <img src="images (1).jpg" alt="Truck Image">
+        <h3>2021 Heavy Duty Truck</h3>
+        <p class="price">$38,000</p>
+
+        <p>4x4 • 42,000 km • Diesel</p>
+        <a href="contact.html" class="btn btn-secondary">Inquire Now</a>
+      </span>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kei Motors. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
